@@ -1,0 +1,25 @@
+<section>
+  <div class="name">
+    {{task.title}}
+  </div>
+  <form [formGroup]="formGroup" class="form-update-task" (submit)="submit(formGroup)">
+    <select class="category-list"
+            formControlName = "idCategory">
+      <option *ngFor="let category of categories"
+              [value]="category.id">{{category.title}}</option>
+    </select>
+    <input class="input-title"
+           formControlName = "title"
+           type="text"
+           maxLength={30}/>
+    <div>
+      <input class="change-status"
+             formControlName = "isDone"
+             type="checkbox"/>Done
+    </div>
+    <textarea class="input-description"
+              formControlName = "description"
+              type="text"></textarea>
+    <input class="btn-save" value="Save" type="submit"/>
+  </form>
+</section>

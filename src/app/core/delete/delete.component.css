@@ -1,0 +1,43 @@
+.delete-item:hover{
+  color: #7baaf7;
+}
+
+.delete-item:before{
+  content: '\f014';
+  font-size: 23px;
+  padding: 9px 0;
+}
+
+.content {
+  padding-left: 125px;
+}
+
+.btn {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 80px;
+  font-size: 16px;
+  height: 25px;
+  justify-content: center;
+  color: white;
+}
+
+.delete:hover{
+  background-color: rgba(255,0,0,0.6);
+}
+.cancel:hover{
+  background-color: rgba(0,128,0,0.6);
+}
+.control {
+  display: flex;
+  padding: 35px 140px;
+  justify-content: space-between;
+}
+.delete {
+  background: red;
+}
+.cancel {
+  background: green;
+}

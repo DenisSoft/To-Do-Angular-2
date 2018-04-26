@@ -1,0 +1,57 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: black;
+  margin: -20px 0 0 10px;
+  font-size: 30px;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  flex-wrap: wrap;
+  font-size: 20px;
+  width: 557px;
+}
+
+.category-list {
+  border: 1px grey solid;
+  width: 330px;
+}
+
+.input-title {
+  border: 1px grey solid;
+  width: 330px;
+  margin-top: 10px;
+}
+
+.btn-save {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 20px 10px 10px 476px;
+  width: 80px;
+  padding: 1px 0 1px 19px;
+  font-size: 16px;
+}
+.btn-save:hover{
+   background-color: #7baaf7;
+}
+
+.change-status {
+  height: 15px;
+  width: 15px;
+  margin: 10px;
+}
+
+.input-description {
+  height: 180px;
+  width: 557px;
+  border: 1px solid grey;
+}

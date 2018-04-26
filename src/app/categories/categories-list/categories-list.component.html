@@ -1,0 +1,26 @@
+<ul class="list-categories">
+  <li class="list" *ngFor="let category of categories$ | async"
+      [style.margin-left.px]="category.idParentCategory ? marginLeft$ (category.id) : 0">
+    <form>
+      <div class="control">
+        <div [style.visibility]="category.listIdChildrenCategory.length > 0 ? 'visible':'hidden'"
+             (click)="openCloseCategory$(category.id)"
+             [class]="isOpenCategory(category.id) ? 'open-category' : 'close-category'">
+        </div>
+          <div class="name">
+            <a [routerLink]="['/category', category.id]" routerLinkActive="active">
+            {{category.title}}
+            </a>
+          </div>
+
+        <app-form-add-and-update-category [category]=category>
+        </app-form-add-and-update-category>
+      </div>
+      <div class="control">
+        <app-delete [id]="category.id" (deleteItem)="deleteCategory$($event)"></app-delete>
+        <app-form-add-and-update-category [categoryId]=category.id>
+        </app-form-add-and-update-category>
+      </div>
+    </form>
+  </li>
+</ul>

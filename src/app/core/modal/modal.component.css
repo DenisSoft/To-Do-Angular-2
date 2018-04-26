@@ -1,0 +1,42 @@
+.back-drop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  padding: 200px;
+}
+
+.modal-window {
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.border {
+  display: flex;
+  flex-direction: column;
+  border: 2px #7baaf7 solid;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.btn-close-modal {
+  justify-content: flex-end;
+  display: flex;
+  margin: 4px 4px 0 0;
+}
+
+.btn-close-modal:hover{
+   color: #9a9a9a;
+}
+
+.btn-close-modal:before{
+   content: "\f057";
+}
+.attention {
+  border-color: red;
+}
+

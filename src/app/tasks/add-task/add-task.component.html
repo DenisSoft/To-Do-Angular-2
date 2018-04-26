@@ -1,0 +1,10 @@
+<form *ngIf="idCategory">
+  <input
+    class="input-form"
+    type="text"
+    placeholder="Enter task title"
+    maxLength="30"
+    #newTask/>
+  <input class="button-submit" type="submit" value="Add" (click)="addTask$(newTask)"/>
+</form>
+

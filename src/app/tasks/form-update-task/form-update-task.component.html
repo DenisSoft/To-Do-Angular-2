@@ -1,0 +1,14 @@
+<div>
+  <div class="btn-update-category"
+       (click)="changeStatusModalWindow(true)"></div>
+  <app-modal [(show)]="isOpen"
+             [height]=410
+             [width]=580
+             (changeStatusModalWindow)="changeStatusModalWindow($event)">
+    <app-update-task
+      #content
+      [task]="task"
+      (changeStatusModalWindow)="changeStatusModalWindow($event)">
+    </app-update-task>
+  </app-modal>
+</div>

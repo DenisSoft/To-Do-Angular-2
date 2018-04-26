@@ -1,0 +1,10 @@
+<form >
+  <input
+    class="input-form"
+    type="text"
+    placeholder="Enter category title"
+    maxLength="30"
+    [value]="category ? category.title : ''"
+    #newTitle/>
+  <input class="button-submit" type="submit" value="Add" (click)="addCategory$(newTitle)"/>
+</form>

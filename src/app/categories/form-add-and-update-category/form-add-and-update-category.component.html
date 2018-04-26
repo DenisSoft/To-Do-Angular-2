@@ -1,0 +1,15 @@
+<div>
+  <div [class]="categoryId ? 'btn-add-category' : 'btn-update-category'"
+       (click)="changeStatusModalWindow(true)"></div>
+  <app-modal [(show)]="isOpen"
+             [height]=170
+             (changeStatusModalWindow)="changeStatusModalWindow($event)">
+    <app-add-and-update-category
+      #content
+      [category]="category"
+      [categoryId]="categoryId"
+      (changeStatusModalWindow)="changeStatusModalWindow($event)">
+    </app-add-and-update-category>
+  </app-modal>
+</div>
+

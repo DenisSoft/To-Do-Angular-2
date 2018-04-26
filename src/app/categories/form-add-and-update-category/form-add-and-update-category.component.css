@@ -1,0 +1,22 @@
+.btn-update-category:hover,
+.btn-add-category:hover{
+  color: #7baaf7;
+}
+
+.btn-add-category:before{
+  content: '\f196';
+  font-size: 23px;
+  padding: 10px;
+}
+
+.btn-update-category:before{
+  content: '\f044';
+  font-size: 23px;
+  padding: 10px;
+}
+
+app-add-and-update-category {
+  display: flex;
+  margin: 25px 0 0 55px;
+}
+

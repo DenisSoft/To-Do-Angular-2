@@ -1,0 +1,17 @@
+<div>
+  <div class="delete-item"
+       (click)="changeStatusModalWindow(true)" >
+  </div>
+  <app-modal [(show)]="isOpen"
+             [attention]=true
+             [height]=170
+             (changeStatusModalWindow)="changeStatusModalWindow($event)">
+    <div class="content">
+      ARE YOU SURE ?
+    </div>
+    <div class="control">
+      <input class="btn delete" value="Delete" type="button" (click)="deleteItem$()" >
+      <input class="btn cancel" value="Cancel" type="button" (click)="changeStatusModalWindow(false)" >
+    </div>
+  </app-modal>
+</div>

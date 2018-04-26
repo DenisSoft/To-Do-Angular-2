@@ -1,0 +1,11 @@
+<div *ngIf="show" class="back-drop">
+  <div class="modal-window"
+       [style.width.px]="width || 500">
+    <div class="border"
+         [style.height.px]="height"
+         [class.attention]="attention">
+      <div class="btn-close-modal" (click)="closeWindow()"></div>
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
